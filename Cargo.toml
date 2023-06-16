@@ -1,0 +1,22 @@
+[package]
+name = "ssp-client"
+version = "0.1.0"
+edition = "2021"
+authors = ["SSP Rust Developers"]
+description = "Reference JSON-RPC client implementation for the SSP/eSSP server"
+keywords = ["serial", "ssp", "bill-acceptor", "bill-validator"]
+categories = ["network-programming"]
+repository = "https://github.com/ssp-rs/ssp-client"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+env_logger = "0.10"
+log = "0.4"
+parking_lot = "0.12"
+signal-hook = "0.3"
+rustyline = "11.0"
+
+[dependencies.ssp]
+version = "0.2"
+features = ["jsonrpc", "std"]
