@@ -18,5 +18,5 @@ signal-hook = "0.3"
 rustyline = "11.0"
 
 [dependencies.ssp]
-version = "0.2"
+version = "0.3"
 features = ["jsonrpc", "std"]
